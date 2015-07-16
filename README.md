@@ -1,5 +1,5 @@
 # her-preprocessor-cssnamespace
-manage css class names, provide css namespace and cross-module access detect.
+manage css class names, provide css namespace and cross-module access detect or dead code detect.
 it also output a css namespace and access map for the runtime or other processor.
 
 ## usage
@@ -20,7 +20,7 @@ it also output a css namespace and access map for the runtime or other processor
 
 ```css
 /* common.css */
-/* only classNames with /public tag can be accessed by other tpls . */
+/* only class names with /public tag can be accessed by other tpls. */
 .widget/public{
   color: red;
   height: 200px;
@@ -37,7 +37,7 @@ it also output a css namespace and access map for the runtime or other processor
 .widget-override{
   color: blue;
 }
-/* classNames with /pure tag will not changed yet. */
+/* class names with /pure tag will not changed yet. */
 .widget/pure{
   font-size: 12px;
 }
@@ -46,7 +46,7 @@ it also output a css namespace and access map for the runtime or other processor
 }
 ```
 
-#### after process, you can get namespaced classNames in tpl and selectors in css,you can also change them to md5
+#### after process, you can get namespaced classNames in tpl and selectors in css, you can also change them all to md5s
 
 ```html
 <!-- widget.tpl -->
