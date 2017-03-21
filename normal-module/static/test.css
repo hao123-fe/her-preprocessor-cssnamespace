@@ -1,0 +1,25 @@
+/* This is test.css */
+html{
+	padding: 0;
+}
+
+.g-ib/public{
+  display: inline-block;
+}
+.container/public{
+  height: 100px;
+}
+
+.container/pure{
+  height: 100px;
+}
+
+.widget, .widget/public{
+  color: red;
+  height: 200px;
+}
+
+.widget/public .button/public{
+  height: 20px;
+  width: 50px;
+}

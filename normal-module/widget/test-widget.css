@@ -1,0 +1,13 @@
+.widget-override{
+  color: blue;
+
+}
+
+.button-large{
+  width: 100px;
+}
+
+
+.g_wide .button-large{
+  width: 200px;
+}
